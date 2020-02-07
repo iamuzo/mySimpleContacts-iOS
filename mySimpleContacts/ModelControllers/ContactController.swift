@@ -40,6 +40,7 @@ class ContactController {
                 return completion(.failure(.unableToDecode))
             }
             
+            self.contacts.append(contact)
             completion(.success(contact))
         }
     }
